@@ -1,0 +1,43 @@
+body {
+    background-color: #FEF9E7;
+    text-align: -webkit-left;
+}
+
+h1 {
+    font-family: Tangerine;
+    font-size: 80px;
+    color: goldenrod;
+    text-align: center;
+    text-decoration-style: solid;
+    text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+}
+
+h3 {
+    font-family: Abril Fatface;
+    font-size: 30px;
+    color: #ffa500;
+    margin-bottom: 0px;
+}
+
+h4 {
+    font-family: Abril Fatface;
+    font-size: 20px;
+    color: #ffa500;
+    margin-bottom: 0px;
+}
+
+p {
+    font-family: Cormorant Garamond;
+    font-size: 20px;
+    color: black;
+}
+
+ol {
+    font-family: Cormorant Garamond;
+    font-size: 20px;
+    color: black;
+}
+
+.adjust-margin{
+    margin-top: 0px;
+}
