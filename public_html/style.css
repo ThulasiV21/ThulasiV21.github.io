@@ -152,8 +152,7 @@ span a:active {
 }
 
 span {
-    font-style: bold;
-    color: darkgreen;
+    color: #ffa500;
 }
 
 footer{
