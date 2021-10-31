@@ -1,5 +1,4 @@
 body {
-    background-color: none;
     padding-top: 0px;
     padding-left: 14px;
     padding-right: 14px;
@@ -18,20 +17,25 @@ h1 {
     max-width: 100%;
 }
 
-.hero-image{
+.hero-image {
     background-image: url("Images/Image1.png");
-    height: 50%;
     width: 100%;
+    height: 400px;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
+    background-repeat: no-repeat;
+}
+
+.home-image {
+    width: 50%;
+    height: auto;
+    min-height: 250px;
+    min-width: 300px;
+    margin: 0 auto;
 }
 
 .t-align-center {
-    text-align: center;
+    text-align: center!important;
 }
 
 h3 {
@@ -60,7 +64,7 @@ ol {
     color: black;
 }
 
-.adjust-margin{
+.adjust-margin {
     margin-top: 0px;
 }
 
@@ -72,7 +76,9 @@ ul.topnav {
     background-color: black;
 }
 
-ul.topnav li {float: left;}
+ul.topnav li {
+    float: left;
+}
 
 ul.topnav li a {
     display: block;
@@ -92,11 +98,17 @@ ul.topnav li img {
     width: 150px;
 }
 
-ul.topnav li a:hover:not(.active) {background-color: darkgreen;}
+ul.topnav li a:hover:not(.active) {
+    background-color: darkgreen;
+}
 
-ul.topnav li a.active {background-color: darkgreen;}
+ul.topnav li a.active {
+    background-color: darkgreen;
+}
 
-ul.topnav li.right {float: right;}
+ul.topnav li.right {
+    float: right;
+}
 
 span a:hover {
     color: darkgreen;
@@ -113,24 +125,21 @@ span a:active {
 }
 
 span a:visited {
-        color: purple;
-        background-color: transparent;
-        text-decoration: none;
-    }
+    color: purple;
+    background-color: transparent;
+    text-decoration: none;
+}
 
 span {
     color: #ffa500;
 }
 
-footer{
+footer {
     background-color: black;
     height: 3%;
     width: 100%;
-    padding: 0;
-    margin: 0;
     bottom: 0;
-    position: fixed;
-    display: inline-block;
+    /*position: fixed;*/
     text-align: center;
     color: white;
 }
@@ -143,12 +152,9 @@ footer{
 }
 
 .divSection {
-    position: -ms-device-fixed;
-    left: 0;
+    position: relative;
     display: grid;
-    float: bottom;
     text-align: center;
-    border: green;
 }
 
 .page-section {
@@ -158,27 +164,9 @@ footer{
 
 @media (max-width: 800px) {
     .page-section {
-      flex-direction: column;
+        flex-direction: column;
     }
-    div.hero-image {
-        max-width: 100%;
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
-    }
-    /*.body-content {*/
-    /*    float: none;*/
-    /*}*/
-    /*.t-align-center {*/
-    /*    overflow: auto;*/
-    /*    float: none;*/
-    /*    flex-direction: column;*/
-    /*}*/
-    /*.divSection {*/
-    /*    float: none;*/
-    /*}*/
-  }
+}
 
 .divBottomFontStyle {
     font-family: "Lemonada";
@@ -211,6 +199,32 @@ footer{
 }
 
 @media screen and (max-width: 600px) {
-    ul.topnav li.right,
-    ul.topnav li {display: flex; flex-direction: row}
+    ul.topnav li {
+        display: flex;
+        flex-direction: row
+    }
+
+    .hero-image {
+        background-image: url("Images/Image1.png");
+        width: 100%;
+        height: 175px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .grid-img {
+        display: inline-block;
+        max-height: 350px;
+        width: auto;
+        max-width: 375px;
+    }
+
+    .width-350 {
+        max-width: 350px!important;
+    }
+}
+
+.pd-top-10 {
+    padding-top: 10px;
 }
