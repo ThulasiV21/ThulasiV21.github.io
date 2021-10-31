@@ -224,16 +224,27 @@ footer {
     }
 }
 
-@media screen and (max-width: 343px){
+@media screen and (max-width: 345px){
+    ul.topnav li {
+        display: flex;
+        flex-direction: column;
+    }
+
     ul.topnav li.right {float: left}
 
     .grid-img {
         display: inline-block;
-        max-height: 350px;
+        max-height: 300px;
         width: auto;
-        max-width: 375px;
+        max-width: 300px;
         min-height: 200px;
         min-width: 200px;
+    }
+
+    .width-350 {
+        max-width: 310px!important;
+        min-height: 250px;
+        min-width: 250px;
     }
 }
 
