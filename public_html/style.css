@@ -196,8 +196,9 @@ footer {
 @media screen and (max-width: 600px) {
     ul.topnav li {
         display: flex;
-        flex-direction: column;
+        flex-direction: row !important;
     }
+    ul.topnav li.right {float: none}
 
     .hero-image {
         background-image: url("Images/Image1.png");
@@ -227,10 +228,10 @@ footer {
 @media screen and (max-width: 345px){
     ul.topnav li {
         display: flex;
-        flex-direction: column;
+        flex-direction: row !important;
     }
 
-    ul.topnav li.right {float: left}
+    ul.topnav li.right {display: block; float: none}
 
     .grid-img {
         display: inline-block;
