@@ -251,3 +251,15 @@ footer {
 .pd-top-10 {
     padding-top: 10px;
 }
+
+.footer-repo {
+    color: white;
+    float: left;
+    padding-left: 1%;
+}
+
+.footer-report {
+    color: white;
+    float: right;
+    padding-right: 1%;
+}
