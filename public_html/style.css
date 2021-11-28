@@ -415,3 +415,8 @@ footer {
     padding-bottom: 500px;
 }
 
+.img-flex-row {
+    display: flex;
+    flex-direction: row;
+}
+

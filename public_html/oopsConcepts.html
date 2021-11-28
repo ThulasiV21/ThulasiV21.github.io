@@ -31,7 +31,7 @@
     <h3>Object Oriented Programming (OOPs) Concepts</h3>
     <h4 class="adjust-margin">In Python</h4>
     <div>
-        <div class="page-section-python">
+        <div class="grid-container-python">
             <div class="grid-left-python">
                 <p>Object-oriented programming (OOP) is a method of structuring a program by bundling related properties and behaviors into individual objects. In this tutorial, you’ll learn the basics of object-oriented programming in Python.</p>
 
@@ -59,6 +59,11 @@
                 </p>
             </div>
 
+            <div class="grid-right-python img-flex">
+                <img src="Images/oops_image2.png" alt="classes and objects in python" class="grid-img width-350 pd-bottom-10">
+                <img src="Images/oops_image1.png" alt="oops concepts in python" class="grid-img width-350">
+            </div>
+
             <div class="grid-left">
                 <h4>Encapsulation</h4>
                 <p class="adjust-margin">It is an essential aspect of object-oriented programming. It is used to restrict access to methods and variables. In encapsulation, code and data are wrapped together within a single unit from being modified by accident.
@@ -75,7 +80,11 @@
                 <p>The whole idea of encapsulation is to protect attributes from being changed even by accident, hence encapsulation all the attributes and their behavior in its class.</p>
             </div>
 
-            <div class="grid-left">
+            <div class="grid-right-python pd-top-50">
+                <a href="https://github.com/ThulasiV21/calc2/blob/refactor_part7_pandas/calc/calculations/calculation.py" target="_blank" title="git hub repo for calculation"><img src="Images/Calculation_encap.png" alt="Encapsulation example in python" class="grid-img width-350"></a>
+            </div>
+
+            <div class="grid-left-python">
                 <h4>Abstraction</h4>
 
                 <p class="adjust-margin">Abstraction is used to hide the internal functionality of the function from the users. The users only interact with the basic implementation of the function, but inner working is hidden. User is familiar with that "what function does" but they don't know "how it does". It basically means you only show the implementation details of a particular process and hide the details from the user. It is used to simplify complex problems by modeling classes appropriate to the problem.</p>
@@ -92,7 +101,11 @@
                 <p>In the above code, we have imported the abc module to create the abstract base class. We created the Addition, Subtraction, Multiplication and Division classes that inherited the ABC class and defined an abstract method named get_result(), using the @abstractmethod decorator. We have then inherited (explained in the next section) the subclasses classes from the base class and implemented the abstract method differently. When objects of the subclasses are created and when the get_result() method is invoked, the hidden implementation of get_result() method inside each of the subclasses comes into play. The implementations for the get_result() abstract method inside the abstract class is never invoked.</p>
 
             </div>
-            <div class="grid-left">
+            <div class="grid-right-python img-flex">
+                <a href="https://github.com/ThulasiV21/calc2/blob/refactor_part7_pandas/calc/calculations/calculation.py" target="_blank" title="git hub repo for calculation"><img src="Images/Calculation_encap.png" alt="Abstraction example in python" class="grid-img width-350 pd-bottom-10"></a>
+                <a href="https://github.com/ThulasiV21/calc2/blob/refactor_part7_pandas/calc/calculations/addition.py" target="_blank" title="git hub repo for addition"><img src="Images/Addition.png" alt="Abstraction example in python" class="grid-img width-350 pd-top-10"></a>
+            </div>
+            <div class="grid-left-python">
                 <h4>Inheritance</h4>
                 <p class="adjust-margin">Inheritance is a powerful feature in object oriented programming.</p>
                 <p>From the Programming aspect, it generally means “inheriting or transfer of characteristics from parent to child class without any modification”. The new class is called the derived/child class and the one from which it is derived is called a parent/base class.</p>
@@ -106,14 +119,19 @@
                 <li><span><b>Multiple Inheritance:</b></span> Multiple level inheritance enables one derived class to inherit properties from more than one base class.</li>
             </ol>
                 </p>
-            </div>
-            <div class="grid-left">
+
                 <h4>Explanation with example</h4>
                 <p class="adjust-margin">In this example, we shall learn about single inheritance. The base/parent class is ‘Calculation’ class which consists of four methods each focusing on one responsibility. The child classes, which are the ‘Addition’, ‘Subtraction’, ‘Multiplication’ and ‘Division’ classes inherit all these attributes and the attributes’ behavior along with their own attribute and behavior, the get_result() method.
                     <span><b>NOTE:</b></span> The methods in the parent’s class can be accessed/called via the syntax ‘ParentClassName.MethodName(self)’.
                 </p>
             </div>
-            <div class="grid-left">
+
+            <div class="grid-right-python img-flex">
+                <a href="https://github.com/ThulasiV21/calc2/blob/refactor_part7_pandas/calc/calculations/calculation.py" target="_blank" title="git hub repo for calculation"><img src="Images/Calculation_encap.png" alt="Inheritance example in python" class="grid-img width-350"></a>
+                <a href="https://github.com/ThulasiV21/calc2/blob/refactor_part7_pandas/calc/calculations/addition.py" target="_blank" title="git hub repo for addition"><img src="Images/Addition.png" alt="Inheritance example in python" class="grid-img width-350 pd-top-10"></a>
+                <a href="https://github.com/ThulasiV21/calc2/blob/refactor_part7_pandas/calc/calculations/subtraction.py" target="_blank" title="git hub repo for subtraction"><img src="Images/Subtraction.png" alt="Inheritance example in python" class="grid-img width-350 pd-top-10"></a>
+            </div>
+            <div class="grid-left-python">
                 <h4>Polymorphism</h4>
                 <p class="adjust-margin">The literal meaning of polymorphism is the condition of occurrence in different forms.</p>
                 <p>Polymorphism is a very important concept in programming. It refers to the use of a single type entity (method, operator or object) to represent different types in different scenarios. Polymorphism in Python allows us to define methods in the child class with the same name as defined in their parent class. This makes programming more intuitive and easier.</p>
@@ -126,13 +144,20 @@
                     <li><span><b>Method Overloading:</b></span> Method overloading is a concept where a class contains multiple methods with the same name but may have different arguments. Basically, python does not support method overloading, but there are several ways to achieve method overloading.</li>
                     <li><span><b>Method Overriding:</b></span> Method overriding is the process of modifying a base class from the derived class having the same methods and same number of arguments.</li>
                 </ol>
-            </div>
-            <div class="grid-left">
                 <h4>Explanation with Example</h4>
                 <p>In the first example is showing operator overloading type of polymorphism. The methods defined, ‘__add__’, ‘__sub__’, ‘__mul__’ and ‘__truediv__’ are all modifications of the built-in operations for all types of attributes like int, float etc. The built-in method is defined in a way where, when a call is made to float.__add__(1.0,2.0) method, the result would be 3.0. In our example, we have re-defined those methods to satisfy our requirements of calling the ‘Addition’ method of the same class and the to add that calculation to a list.</p>
-                <p>Our next example explains the ‘method overriding’ type of polymorphism. The base class ‘Calculation’ defines a method skeleton for get_result() which the child classes inherit and re-defines them according to their requirement. The ‘Addition’ class redefines it to add all the numbers it receives in a list and returns the sum of the numbers. In the same manner, all the other child classes inherit the properties of base class and molds/re-defines the get_result() method to satisfy their requirements. For polymorphism to occur, there has to be inheritance between classes.</p>
-                <p>No one methodology can exist alone, they all are inter-dependent on each other and co-exist to ultimately satisfy or showcase the object-oriented programming concepts.</p>
+                <p>Our next example explains the ‘method overriding’ type of polymorphism. The base class ‘Calculation’ defines a method skeleton for get_result() which the child classes inherit and re-defines them according to their requirement. The ‘Multiplication’ and "Division' classes redefines it to multiply and divide all the numbers it receives in a list and returns the result of the numbers. In the same manner, all the other child classes inherit the properties of base class and molds/re-defines the get_result() method to satisfy their requirements. For polymorphism to occur, there has to be inheritance between classes.</p>
             </div>
+
+            <div class="grid-right-python img-flex">
+                <a href="https://github.com/ThulasiV21/calc2/blob/refactor_part7_pandas/calc/calculator.py" target="_blank" title="git hub repo for dataframe"><img src="Images/calculator.png" alt="Polymorphism example in python" class="grid-img width-350"></a>
+                <a href="https://github.com/ThulasiV21/calc2/blob/refactor_part7_pandas/calc/calculations/multiplication.py" target="_blank" title="git hub repo for Multiplication"><img src="Images/Multiplication.png" alt="Polymorphism example in python" class="grid-img width-350 pd-top-10">
+                <a href="https://github.com/ThulasiV21/calc2/blob/refactor_part7_pandas/calc/calculations/division.py" target="_blank" title="git hub repo for division"><img src="Images/Division.png" alt="Polymorphism example in python" class="grid-img width-350 pd-top-10"></a>
+            </div>
+        </div>
+        <div class="t-align-center">
+            <p class="font-larger">No one methodology can exist alone, they all are inter-dependent on each other and co-exist to ultimately satisfy or showcase the object-oriented programming concepts.</p>
+            <p><span><b>Click on</b></span> the images to look into the code in detail</p></p>
         </div>
     </div>
 </div>
