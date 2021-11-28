@@ -26,5 +26,102 @@
         </ul>
     </div>
 </nav>
+
+<div class="body-content">
+    <h3>Testing</h3>
+    <h4 class="adjust-margin">In general and particularly in Python</h4>
+    <div>
+        <div class="page-section-python">
+            <div class="grid-left-python">
+                <h4>What is testing?</h4>
+                <p class="adjust-margin">Software testing is the process of evaluating and verifying that a software product or application does what it is supposed to do. The benefits of testing include preventing bugs, reducing development costs and improving performance.</p>
+
+                <p>
+                    Software testing is the act of examining the artifacts and the behavior of the software under test by validation and verification. Software testing can also provide an objective, independent view of the software to allow the business to appreciate and understand the risks of software implementation. Test techniques include, but not necessarily limited to:
+
+                    <ul class="ul-python p">
+                <li>analyzing the product requirements for completeness and correctness in various contexts like industry perspective, business perspective, feasibility and viability of implementation, usability, performance, security, infrastructure considerations, etc.</li>
+                <li>reviewing the product architecture and the overall design of the product</li>
+                <li>working with product developers on improvement in coding techniques, design patterns, tests that can be written as part of code based on various techniques like boundary conditions, etc.</li>
+                <li>executing a program or application with the intent of examining behavior.</li>
+                <li>reviewing the deployment infrastructure and associated scripts & automation.</li>
+                <li>take part in production activities by using monitoring & observability techniques.</li>
+            </ul>
+                </p>
+            </div>
+            <div class="grid-left">
+                <h4>Why is testing required?</h4>
+                <p class="adjust-margin">Few can argue against the need for quality control when developing software. Late delivery or software defects can damage a brand’s reputation — leading to frustrated and lost customers. In extreme cases, a bug or defect can degrade interconnected systems or cause serious malfunctions.</p>
+
+                <p>Consider Nissan having to recall over 1 million cars due to a software defect in the airbag sensor detectors. Or a software bug that caused the failure of a USD 1.2 billion military satellite launch. The numbers speak for themselves. Software failures in the US cost the economy USD 1.1 trillion in assets in 2016. What’s more, they impacted 4.4 billion customers.</p>
+
+                <p>Though testing itself costs money, companies can save millions per year in development and support if they have a good testing technique and QA processes in place. Early software testing uncovers problems before a product goes to market. The sooner development teams receive test feedback, the sooner they can address issues such as:
+                <ol>
+                <li>Architectural flaws</li>
+                <li>Poor design decisions</li>
+                <li>Invalid or incorrect functionality</li>
+                <li>Security vulnerabilities</li>
+                <li>Scalability issues</li>
+            </ol>
+                </p>
+
+                <p>When development leaves ample room for testing, it improves software reliability and high-quality applications are delivered with few errors. A system that meets or even exceeds customer expectations leads to potentially more sales and greater market share.</p>
+            </div>
+
+            <div class="grid-left">
+                <h4>Types of testing</h4>
+                <p>There are many different types of software tests, each with specific objectives and strategies:
+                <ul class="ul-python">
+                <li><span><b>Acceptance testing:</b></span> Verifying whether the whole system works as intended.</li>
+                <li><span><b>Integration testing:</b></span> Ensuring that software components or functions operate together.</li>
+                <li><span><b>Unit testing:</b></span> Validating that each software unit performs as expected. A unit is the smallest testable component of an application.</li>
+                <li><span><b>Functional testing:</b></span> Checking functions by emulating business scenarios, based on functional requirements. Black-box testing is a common way to verify functions.</li>
+                <li><span><b>Performance testing:</b></span> Testing how the software performs under different workloads. Load testing, for example, is used to evaluate performance under real-life load conditions.</li>
+                <li><span><b>Regression testing:</b></span> Checking whether new features break or degrade functionality. Sanity testing can be used to verify menus, functions and commands at the surface level, when there is no time for a full regression test.</li>
+                <li><span><b>Stress testing:</b></span> Testing how much strain the system can take before it fails. Considered to be a type of non-functional testing.</li>
+                <li><span><b>Usability testing:</b></span> Validating how well a customer can use a system or web application to complete a task.</li>
+            </ul>
+                </p>
+
+                <p>In each case, validating base requirements is a critical assessment. Just as important, exploratory testing helps a tester or testing team uncover hard-to-predict scenarios and situations that can lead to software errors.</p>
+
+                <p>This article will concentrate on unit testing in Python.
+                    Unit testing is a software testing method by which individual units of source code are put under various tests to determine whether they are fit for use (Source). It determines and ascertains the quality of your code.
+                </p>
+
+                <p>Generally, when the development process is complete, the developer codes criteria, or the results that are known to be potentially practical and useful, into the test script to verify a particular unit's correctness. During test case execution, various frameworks log tests that fail any criterion and report them in a summary.</p>
+
+                <p>Though writing manual tests for your code is definitely a tedious and time-consuming task, Python's built-in unit testing framework has made life a lot easier where it allows you to write tests for each method to check its behavior. As and when more modules are added, it also allows you to combine and test all these single unit tests together integrating the outcomes to be as expected and hence the name ‘Integration Testing’.</p>
+
+                <p>Keeping track of one or two unit tests is easy but when it comes to multiple unit tests to be run at once or with respect to integration testing, keeping track of which test failed or passed becomes cumbersome. This is where test runners come in. The test runner is a special application designed for running tests, checking the output, and giving you tools for debugging and diagnosing tests and applications.</p>
+
+                <p>Test Runner is a library or a testing tool which reads the source code that contains unit tests and a bunch of settings which can be executed and produces its output to the console or log files.
+                    There are different Test Runners available in Python. Popular ones are
+                    <ol>
+                <li><span><b>Unittest:</b></span> It is built into the standard python library</li>
+                <li><span><b>nose or nose2:</b></span> This is an open-source application and similar to unittest</li>
+                <li><span><b>pytest:</b></span> It supports unittest test cases execution. It has benefits like supporting built in assert statement, filtering of test cases, returning from last failing test etc</li>
+            </ol>
+                </p>
+            </div>
+
+            <div class="grid-left">
+                <h4>AAA testing pattern</h4>
+                <p class="adjust-margin">The AAA pattern is a pattern for structuring tests. It breaks each test down into three parts - Arrange, Act, and Assert - where each part is a step leading to the next. The arrange step sets up the test’s input values. The act step prompts the primary function being tested. And finally, the assert step verifies that the output of the function is what was expected. In other words, each step in the pattern is a function whose return value is the input of the following step.</p>
+
+                <p>Arrange-Act-Assert is a great way to structure test cases. It prescribes an order of operations:
+                <ol>
+                <li><span><b>Arrange</b></span> inputs and targets. Arrange steps should set up the test case. Does the test require any objects or special settings? Does it need to prep a database? Does it need to log into a web app? Handle all of these operations at the start of the test.</li>
+                <li><span><b>Act</b></span> on the target behavior. Act steps should cover the main thing to be tested. This could be calling a function or method, calling a REST API, or interacting with a web page. Keep actions focused on the target behavior.</li>
+                <li><span><b>Assert</b></span> expected outcomes. Act steps should elicit some sort of response. Assert steps verify the goodness or badness of that response. Sometimes, assertions are as simple as checking numeric or string values. Other times, they may require checking multiple facets of a system. Assertions will ultimately determine if the test passes or fails.</li>
+            </ol>
+                </p>
+            </div>
+            <div class="grid-right">
+                <p>Here are a few examples showcasing the AAA testing pattern using internal and external data.</p>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

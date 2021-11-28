@@ -308,6 +308,9 @@ footer {
 
 .ul-python {
     list-style-type: disc;
+    font-family: Cormorant Garamond;
+    font-size: 20px;
+    color: black;
 }
 
 @media (max-width: 800px) {
@@ -331,4 +334,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.adjust-margin-bottom {
+    margin-bottom: 0;
 }
