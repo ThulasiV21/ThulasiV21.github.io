@@ -31,7 +31,7 @@
     <h3>Pylint</h3>
     <h4 class="adjust-margin">In Python</h4>
     <div>
-        <div class="page-section-python">
+        <div class="grid-container-python">
             <div class="grid-left-python">
                 <p>To all new programmers out there, here are some <span><b>tips and tricks</b></span> to understand the
                     <span><b>what</b></span> and <span><b>why</b></span> of pylint and finally on
@@ -58,7 +58,7 @@
             <div class="grid-right-python">
                 <img src="Images/what.png" alt="What icon" class="grid-img width-350">
             </div>
-            <div class="grid-left">
+            <div class="grid-left-python">
                 <h4>Why should I use pylint?</h4>
                 <p class="adjust-margin">
                     Dynamic language like Python does not have a compiler that’ll catch production impacting bugs for
@@ -72,10 +72,10 @@
                     on some of the important warnings that make Pylint so useful.
                 </p>
             </div>
-            <div class="grid-right">
+            <div class="grid-right-python">
                 <img src="Images/why.png" alt="Why icon" class="grid-img width-350">
             </div>
-            <div class="grid-left">
+            <div class="grid-left-python">
                 <h4>How to implement pylint</h4>
                 <p class="adjust-margin">
                     First step is to install pylint and there are 2 ways to do it.
@@ -103,10 +103,10 @@
                     folders to check. Hence to make it easier you could comment all your lines of code except for a
                     single file and run pylint.</p>
             </div>
-            <div class="grid-right">
+            <div class="grid-right-python">
                 <img src="Images/how.png" alt="How icon" class="grid-img width-350">
             </div>
-            <div class="grid-left">
+            <div class="grid-left-python">
                 <h4>Pylint report</h4>
                 <p class="adjust-margin">
                     Don’t be alarmed by the report you see at first as Pylint was created or in other words is only a
@@ -115,10 +115,9 @@
                     that you would need to make or not make based on your project requirements.
                 </p>
 
-                <p>Using the default text output, the message format is : </p>
-                <p class="adjust-margin">MESSAGE_TYPE:LINE_NUM:[OBJECT:] MESSAGE</p>
+                <p class="adjust-margin-bottom">Using the default text output, the message format is : MESSAGE_TYPE:LINE_NUM:[OBJECT:] MESSAGE</p>
                 <p class="adjust-margin">There are 5 kind of message types:</p>
-                <p style="font-family: Cormorant Garamond;">
+                <p>
                 <ul class="ul-python">
                     <li>(C) convention, for programming standard violation</li>
                     <li>(R) refactor, for bad code smell</li>
@@ -140,30 +139,32 @@
                     indicate that you've considered the issue by adding a disabling comment to your class. <span><b>For eg:</b></span>
                     pylint error: too-many-instance-attributes
                 </p>
-                </div>
-        </div>
-        <div class="grid-right">
+            </div>
+        <div class="grid-right-python">
             <img src="Images/pylintReport.png" alt="Pylint report example" class="grid-img width-350">
         </div>
-            <div class="grid-left">
-                <p>Pylint can be <span><b>tailored</b></span> to your needs by a way of either
-                <ol>
-                    <li>Through disabling or enabling the checks you would need for your project.</li>
-                    <li>By creating a custom-made configuration file that provides a list of checks for pylint along
-                        with custom-made error/warning messages to be shown. You can generate a config file via the cmd
-                        --generate-rcfile that will contain all the original checks and messages.
-                    </li>
-                </ol>
-                </p>
+        <div class="grid-left-python">
+            <p>Pylint can be <span><b>tailored</b></span> to your needs by a way of either
+            <ol>
+                <li>Through disabling or enabling the checks you would need for your project.</li>
+                <li>By creating a custom-made configuration file that provides a list of checks for pylint along
+                    with custom-made error/warning messages to be shown. You can generate a config file via the cmd
+                    --generate-rcfile that will contain all the original checks and messages.
+                </li>
+            </ol>
+            </p>
+        </div>
+    <div class="grid-right-python">
+        <a href="https://github.com/ThulasiV21/calc2/blob/refactor_part7_pandas/.pylintrc" target="_blank" title="git repository"><img src="Images/pylintDisable.png" alt="Pylint disable file" class="grid-img-python width-350"></a>
+    </div>
+    </div>
+        <div>
+            <p class="t-align-center font-larger"><span><b>To know more</b></span> about pylint <a href="https://pylint.pycqa.org/en/latest/intro.html"
+                                                                                       target="_blank"
+                                                                                       title="Pylint information webpage">Click here</a></p>
         </div>
     </div>
-    <div class="grid-right">
-        <img src="Images/pylintDisable.png" alt="Pylint disable file" class="grid-img width-350">
-    </div>
-    <div>
-        <p><span><b>To know more</b></span> about pylint <a href="https://pylint.pycqa.org/en/latest/intro.html" target="_blank"
-                                        title="Pylint information webpage">Click here</a></p>
-    </div>
 </div>
+<footer class="footer-index"><a href="https://github.com/ThulasiV21/historyWebsite" target="_blank" title="My git repository" class="footer-repo">Git Repo</a><a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fhistoryofinternetwebsitetg.eastus.azurecontainer.io%2Findex.html" target="_blank" title="W3C Validator report" class="footer-report">W3C Report</a> Thulasi TG, Class of 2021 - IS601 &#169;</footer>
 </body>
 </html>

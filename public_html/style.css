@@ -161,6 +161,10 @@ footer {
     .page-section {
         flex-direction: column;
     }
+
+    .page-section-python {
+        flex-direction: row;
+    }
 }
 
 .divBottomFontStyle {
@@ -242,6 +246,16 @@ footer {
         min-width: 200px;
     }
 
+    .grid-img-python {
+        display: inline-block;
+        max-height: 300px;
+        width: auto;
+        max-width: 375px;
+        min-height: 200px;
+        min-width: 200px;
+    }
+
+
     .width-350 {
         max-width: 310px!important;
         min-height: 250px;
@@ -315,7 +329,7 @@ footer {
 
 @media (max-width: 800px) {
     .page-section-python {
-        flex-direction: column;
+        flex-direction: row;
     }
 }
 
@@ -325,7 +339,7 @@ footer {
     font-family: Roboto;
     font-size: 20px;
     color: black;
-    flex: 50% !important;
+    flex: 70% !important;
 }
 
 .grid-right-python {
@@ -338,4 +352,31 @@ footer {
 
 .adjust-margin-bottom {
     margin-bottom: 0;
+}
+
+.adjust-padding-left {
+    padding-left: 2%;
+}
+
+.grid-container-python {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    position: center;
+}
+
+.grid-img-python {
+    display: inline-block;
+    max-height: 300px;
+    width: auto;
+    max-width: 375px;
+    min-height: 250px;
+    min-width: 250px;
+    position: center;
+}
+
+.font-larger {
+    font-family: Cormorant Garamond;
+    font-size: 40px;
+    color: black;
 }
