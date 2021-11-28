@@ -345,7 +345,7 @@ footer {
 
 .grid-right-python {
     text-align: center;
-    flex: 40%; !important;
+    flex: 30%; !important;
     display: flex;
     justify-content: center;
     align-items: center;

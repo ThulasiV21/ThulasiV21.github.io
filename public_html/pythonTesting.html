@@ -201,8 +201,64 @@
                 </ol>
                 </p>
             </div>
-            <div class="grid-right">
-                <p>Here are a few examples showcasing the AAA testing pattern using internal and external data.</p>
+            <div class="grid-right-python">
+                <img src="Images/addition_test.png" alt="types of testing" class="grid-img width-350">
+            </div>
+
+            <div class="grid-left-python">
+                <h4>Pytest Fixtures</h4>
+                <p>In testing, a fixture provides a defined, reliable and consistent context for the tests. This could include environment (for example a database configured with known parameters) or content (such as a dataset).</p>
+                <p>Fixtures define the steps and data that constitute the arrange phase of a test (see Anatomy of a test). In pytest, they are functions you define that serve this purpose. They can also be used to define a test’s act phase; this is a powerful technique for designing more complex tests.</p>
+                <p>The services, state, or other operating environments set up by fixtures are accessed by test functions through arguments. For each fixture used by a test function there is typically a parameter (named after the fixture) in the test function’s definition.</p>
+                <p>We can tell pytest that a particular function is a fixture by decorating it with @pytest.fixture or in file with the name as 'conftest.py'.</p>
+                <p>The conftest.py file serves as a means of providing fixtures for an entire directory. Fixtures defined in a conftest.py can be used by any test in that package without needing to import them (pytest will automatically discover them).</p>
+            </div>
+
+            <div class="grid-right-python">
+                <img src="Images/pytest_fixtures.png" alt="Pytest fixtire" class="grid-img width-350">
+            </div>
+
+            <div class="grid-left-python">
+                <h4>Testing with external data using pandas </h4>
+                <p>We are using pandas and Numpy libraries to test with external data.</p>
+                <p>Pandas is an open source Python package that is most widely used for data science/data analysis and machine learning tasks. It is built on top of another package named Numpy, which provides support for multi-dimensional arrays. As one of the most popular data wrangling packages, Pandas works well with many other data science modules inside the Python ecosystem, and is typically included in every Python distribution, from those that come with your operating system to commercial vendor distributions like ActiveState’s ActivePython.</p>
+                <p>Pandas makes it simple to do many of the time consuming, repetitive tasks associated with working with data</p>
+                <p>In the image on the right, we have a class 'PandasFileReader' which has methods 'file_name()', 'read_file()', '_process_xlsx_file()', '_process_csv_file()', each having a single responsibility of reading the file type extension and based on the file type the respective methods are called who create dataframes by reading the external file and extracting that data into a dataframe using pandas.</p>
+            </div>
+
+            <div class="grid-right-python">
+                <img src="Images/Assert_df.png" alt="Pytest fixture" class="grid-img width-350">
+            </div>
+
+            <div class="grid-left-python">
+                <h4>AAA Testing using fixtures example</h4>
+                <p>In this example, we are testing a class that contains a list to keep track of the operations performed and their results.</p>
+                <p>The 'test_add_calculation_to_history()' test is testing the functionality of adding the result to the list using the fixtures 'setup_history_test_fixture' that calls method to perform an operation and then add that operation's result to the list and 'clear_history_fixture', that calls the method to clear the list.</p>
+                <p>The 'test_clear_calculation_history()' test is testing the functionality of clearing the list, also using fixtures</p>
+                <p>The 'test_get_calculation()' test is testing the functionality of retrieving a particular indexed value from the list, also using fixtures.</p>
+            </div>
+
+            <div class="grid-right-python">
+                <img src="Images/calculator_result-test.png" alt="Pytest fixture" class="grid-img width-350">
+            </div>
+
+            <div class="grid-left-python">
+                <h4>AAA Testing using pandas example</h4>
+                <p><span><b>Example one:</b></span> In this example, we are testing the functionality of adding and subtracting numbers.</p>
+                <p>Both the tests use a common fixture 'clear_history_fixture' that calls method to clear the list (as mentioned above) and individually 'addition_file_fixture' and 'subtraction_file_fixture', each fixture creating a dataframe from external excel files for addition and subtraction respectively.</p>
+                <p>As you can see in the 'Arrange' section of AAA testing pattern, the test is arranging the test data for the test by selecting the 5th row from the dataframe and passing those values along to the 'Act' section.</p>
+                <p>In the 'Act' section, the tests are calling the respective operation classes.</p>
+                <p>In the 'Assert' section, the test is asserting(or checking, in other terms) that the value/result received from the respective operation class is the same as the expected value/result from the dataframe.</p>
+                <p><span><b>Example two:</b></span> In this example, we are testing the functionality of dividing numbers, the positive and negative scenario(dividing by zero)</p>
+                <p>The test uses a fixture 'division_file_fixture' that calls method to create a dataframe for division.</p>
+                <p>In the 'Arrange' section, the test is looping through each row of the dataframe and rendering or passing along those values as a tuple to the next section</p>
+                <p>In the 'Act' section, the test is calling the division class that divides the numbers and returns the result.</p>
+                <p>In the 'Assert' section, the test is asserting that the result received from the division class is as expected and/or as the 'result' column of the dataframe for the respective row.</p>
+            </div>
+
+            <div class="grid-right-python img-flex">
+                <img src="Images/calculator_static_tests.png" alt="Pytest fixture" class="grid-img width-350 pd-bottom-10">
+                <img src="Images/calculator_static_tests.png" alt="Pytest fixture" class="grid-img width-350 pd-top-10">
             </div>
         </div>
     </div>
