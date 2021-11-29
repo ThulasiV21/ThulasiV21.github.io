@@ -29,25 +29,12 @@
 
 <div class="body-content">
     <h3>Object Oriented Programming (OOPs) Concepts</h3>
-
+    <h4 class="adjust-margin">In Python</h4>
     <div class="page-section">
         <div class="grid-left">
-            <h4 class="adjust-margin">In Python</h4>
             <p>Object-oriented programming (OOP) is a method of structuring a program by bundling related properties and
                 behaviors into individual objects. In this tutorial, you’ll learn the basics of object-oriented
                 programming in Python.</p>
-
-            <p>Conceptually, objects are like the components of a system. Think of a program as a factory assembly line
-                of sorts. At each step of the assembly line a system component processes some material, ultimately
-                transforming raw material into a finished product.</p>
-
-            <p>An object contains data, like the raw or preprocessed materials at each step on an assembly line, and
-                behavior, like the action each assembly line component performs.</p>
-
-            <h4>Classes and Objects</h4>
-            <p class="adjust-margin">A class is a collection of objects or you can say it is a blueprint of objects
-                defining the common attributes and behavior, It logically groups the data in such a way that code
-                reusability becomes easy.</p>
 
             <h4>What are Python OOPs Concepts?</h4>
             <p class="adjust-margin">
@@ -55,8 +42,19 @@
                 Polymorphism, Data Abstraction, and Encapsulation. Let’s learn about each one of them with examples.
             </p>
 
-            <p>Objects are an instance of a class. It is an entity that has state and behavior. In a nutshell, it is an
-                instance of a class that can access the data.</p>
+            <h4>Classes and Objects</h4>
+            <p class="adjust-margin">A class is a collection of objects or you can say it is a blueprint of objects
+                defining the common attributes and behavior, It logically groups the data in such a way that code
+                reusability becomes easy.</p>
+
+            <p>An object contains data, like the raw or preprocessed materials at each step on an assembly line, and
+                behavior, like the action each assembly line component performs.
+                <br>Objects are an instance of a class. It is an entity that has state and behavior. In a nutshell, it is an
+                instance of a class that can access the data.></p>
+
+            <p>Conceptually, objects are like the components of a system. Think of a program as a factory assembly line
+                of sorts. At each step of the assembly line a system component processes some material, ultimately
+                transforming raw material into a finished product.</p>
 
             <p>Object-Oriented Programming methodologies deal with the following concepts.
             <ol>
@@ -115,7 +113,6 @@
     <div class="page-section">
         <div class="grid-left">
             <h4>Abstraction</h4>
-
             <p class="adjust-margin">Abstraction is used to hide the internal functionality of the function from the
                 users. The users only interact with the basic implementation of the function, but inner working is
                 hidden. User is familiar with that "what function does" but they don't know "how it does". It basically
@@ -129,12 +126,12 @@
                 class. It can only be used for inheriting the functionalities.</p>
 
             <h4>Abstract Base Class</h4>
-            <p>An abstract base class is the common application program of the interface for a set of subclasses. It can
+            <p class="adjust-margin">An abstract base class is the common application program of the interface for a set of subclasses. It can
                 be used by the third-party, which will provide the implementations such as with plugins. It is also
                 beneficial when we work with the large code-base hard to remember all the classes.</p>
 
             <h4>Working of Abstract classes</h4>
-            <p>Unlike the other high-level language, Python doesn't provide the abstract class itself. We need to import
+            <p class="adjust-margin">Unlike the other high-level language, Python doesn't provide the abstract class itself. We need to import
                 the abc module, which provides the base for defining Abstract Base classes (ABC). The ABC works by
                 decorating methods of the base class as abstract. It registers concrete classes as the implementation of
                 the abstract base. We use the @abstractmethod decorator to define an abstract method or if we don't
@@ -142,9 +139,9 @@
                 following example.</p>
 
             <h4>Explanation with example</h4>
-            <p>In the above code, we have imported the abc module to create the abstract base class. We created the
+            <p class="adjust-margin">In the above code, we have imported the abc module to create the abstract base class. We created the
                 Addition, Subtraction, Multiplication and Division classes that inherited the ABC class and defined an
-                abstract method named get_result(), using the @abstractmethod decorator. We have then inherited
+                abstract method named get_result(), using the '<span><b>@abstractmethod</b></span>' decorator. We have then inherited
                 (explained in the next section) the subclasses classes from the base class and implemented the abstract
                 method differently. When objects of the subclasses are created and when the get_result() method is
                 invoked, the hidden implementation of get_result() method inside each of the subclasses comes into play.
@@ -196,7 +193,7 @@
                 classes, which are the ‘Addition’, ‘Subtraction’, ‘Multiplication’ and ‘Division’ classes inherit all
                 these attributes and the attributes’ behavior along with their own attribute and behavior, the
                 get_result() method.
-                <span><b>NOTE:</b></span> The methods in the parent’s class can be accessed/called via the syntax
+                <br><span><b>NOTE:</b></span> The methods in the parent’s class can be accessed/called via the syntax
                 ‘ParentClassName.MethodName(self)’.
             </p>
         </div>
@@ -264,15 +261,15 @@
         <div class="grid-right img-flex">
             <a href="https://github.com/ThulasiV21/calc2/blob/refactor_part7_pandas/calc/calculator.py" target="_blank"
                title="git hub repo for dataframe"><img src="Images/calculator.png" alt="Polymorphism example in python"
-                                                       class="grid-img width-350"></a>
+                                                       class="grid-img width-350 pd-top-50"></a>
             <a href="https://github.com/ThulasiV21/calc2/blob/refactor_part7_pandas/calc/calculations/multiplication.py"
                target="_blank" title="git hub repo for Multiplication"><img src="Images/Multiplication.png"
                                                                             alt="Polymorphism example in python"
-                                                                            class="grid-img width-350 pd-top-10"></a>
+                                                                            class="grid-img width-350 pd-top-50"></a>
             <a href="https://github.com/ThulasiV21/calc2/blob/refactor_part7_pandas/calc/calculations/division.py"
                target="_blank" title="git hub repo for division"><img src="Images/Division.png"
                                                                       alt="Polymorphism example in python"
-                                                                      class="grid-img width-350 pd-top-10"></a>
+                                                                      class="grid-img width-350 pd-top-50"></a>
         </div>
     </div>
     <div class="t-align-center">
@@ -280,12 +277,12 @@
             co-exist to ultimately satisfy or showcase the object-oriented programming concepts.</p>
         <p><span><b>Click on</b></span> the images to look into the code in detail</p></p>
     </div>
-    <footer class="footer-index"><a href="https://github.com/ThulasiV21/calc2/tree/refactor_part7_pandas"
-                                    target="_blank" title="My git repository" class="footer-repo">Git Repo</a><a
-            href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fhistoryofinternetwebsitetg.eastus.azurecontainer.io%2Findex.html"
-            target="_blank" title="W3C Validator report" class="footer-report">W3C Report</a> Thulasi TG, Class of 2021
-        - IS601 &#169;
-    </footer>
 </div>
+<footer class="footer-index"><a href="https://github.com/ThulasiV21/calc2/tree/refactor_part7_pandas"
+                                target="_blank" title="My git repository" class="footer-repo">Git Repo</a><a
+        href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fhistoryofinternetwebsitetg.eastus.azurecontainer.io%2Findex.html"
+        target="_blank" title="W3C Validator report" class="footer-report">W3C Report</a> Thulasi TG, Class of 2021
+    - IS601 &#169;
+</footer>
 </body>
 </html>
