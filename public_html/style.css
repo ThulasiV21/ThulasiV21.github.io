@@ -190,6 +190,14 @@ footer {
     align-items: center;
 }
 
+.grid-bottom {
+    text-align: center;
+    /*flex: 50%;*/
+    display: block;
+    align-items: center;
+    float: bottom; !important;
+}
+
 .grid-img {
     display: inline-block;
     max-height: 350px;
@@ -285,9 +293,8 @@ footer {
     display: inline-block;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0.5, 0, 0, 0.5)), url("Images/hero_index3.jpg");
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-
 }
 
 .pd-bottom-10 {
@@ -299,6 +306,15 @@ footer {
     max-height: 70%;
     width: 70%;
     align-items: center;
+}
+
+.grid-img-index-bottom {
+    display: grid;
+    max-height: 50%;
+    width: 50%;
+    align-items: center;
+    /*overflow:hidden;*/
+    border-radius: 50%;
 }
 
 .footer-index {
@@ -401,6 +417,7 @@ footer {
     font-family: "Lemonada";
     font-size: large;
     color: #2ecc71;
+    text-align: center;
 }
 
 .grid-left-index {
@@ -425,5 +442,14 @@ footer {
 .img-flex-row {
     display: flex;
     flex-direction: row;
+}
+
+.img-rounded {
+    border-radius: 50%;
+    width: 200px;
+}
+
+.pd-bottom-3 {
+    padding-bottom: 4%;
 }
 
