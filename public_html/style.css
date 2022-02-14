@@ -311,10 +311,10 @@ footer {
 }
 
 .grid-img-index-bottom {
-    display: grid;
+    /*display: grid;*/
     max-height: 50%;
     width: 50%;
-    align-items: center;
+    /*align-items: center;*/
     /*overflow:hidden;*/
     border-radius: 50%;
 }
@@ -328,7 +328,6 @@ footer {
     color: white;
     position: static;
     padding: 0;
-    /*z-index: -1;*/
 }
 
 .hero-image-python {
@@ -466,6 +465,6 @@ footer {
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  /*text-align: center;*/
+  text-align: center;
 }
 
